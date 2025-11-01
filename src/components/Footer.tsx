@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Your Name</h3>
+              <h3 className="text-lg font-semibold mb-4">Koen Tuijnman</h3>
               <p className="text-sm text-primary-foreground/80">
                 AI Product Manager helping companies build intelligent prototypes and solutions.
               </p>
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
 
           <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-            <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Koen Tuijnman. All rights reserved.</p>
           </div>
         </div>
       </div>
