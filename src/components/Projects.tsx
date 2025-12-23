@@ -6,25 +6,25 @@ import project3 from "@/assets/project-3.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "AI Customer Support Assistant",
-      description: "Intelligent chatbot that handles customer queries with 95% accuracy, reducing support costs by 40%.",
+      title: "Menu Digitalizer",
+      description: "AI-powered tool that transforms physical restaurant and food truck menus into beautiful digital formats, making menu management effortless.",
       image: project1,
-      tools: ["OpenAI GPT-4", "LangChain", "Pinecone", "React"],
-      languages: ["Python", "TypeScript", "SQL"],
+      tools: ["OpenAI Vision", "React", "Supabase", "Tailwind"],
+      languages: ["TypeScript", "Python", "SQL"],
     },
     {
-      title: "Predictive Analytics Dashboard",
-      description: "ML-powered dashboard providing real-time insights and predictions for business metrics.",
+      title: "Journal Summarizer",
+      description: "Converts handwritten notes from Supernote into structured summaries, actionable tasks, and insights using AI-powered handwriting recognition.",
       image: project2,
-      tools: ["TensorFlow", "Pandas", "D3.js", "FastAPI"],
-      languages: ["Python", "JavaScript", "R"],
+      tools: ["Claude API", "OCR", "LangChain", "React"],
+      languages: ["Python", "TypeScript"],
     },
     {
-      title: "Automated Workflow Engine",
-      description: "AI-driven automation system that streamlines complex business processes and decision-making.",
+      title: "AI Content Solutions",
+      description: "Scalable AI content generation system for digital marketing products, accelerating product delivery by 50% for enterprise clients.",
       image: project3,
-      tools: ["Claude API", "n8n", "PostgreSQL", "Docker"],
-      languages: ["Python", "TypeScript", "Bash"],
+      tools: ["OpenAI API", "Python", "AWS", "PostgreSQL"],
+      languages: ["Python", "SQL", "HTML & CSS"],
     },
   ];
 
@@ -34,7 +34,7 @@ const Projects = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">Featured Projects</h2>
           <p className="text-lg text-muted-foreground">
-            A selection of AI products I've built, from concept to deployment
+            Personal AI projects and enterprise solutions I've built to improve life and work
           </p>
         </div>
 

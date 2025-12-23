@@ -9,7 +9,7 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Koen Tuijnman</h3>
               <p className="text-sm text-primary-foreground/80">
-                AI Product Manager helping companies build intelligent prototypes and solutions.
+                Principal Product Manager with 10 years experience building AI solutions and digital products.
               </p>
             </div>
             

@@ -4,18 +4,18 @@ import { Briefcase, GraduationCap, Code, Download } from "lucide-react";
 
 const About = () => {
   const skills = [
-    "Product Management",
-    "AI/ML Strategy",
-    "Rapid Prototyping",
-    "User Research",
+    "Scrum",
     "Python",
-    "TypeScript",
-    "LangChain",
-    "OpenAI API",
-    "Claude API",
-    "Vector Databases",
-    "React",
-    "FastAPI",
+    "SQL",
+    "HTML & CSS",
+    "Jira",
+    "Figma",
+    "Salesforce",
+    "PowerBI",
+    "AWS",
+    "Behavioral Modeling",
+    "UX/UI",
+    "Ecommerce",
   ];
 
   return (
@@ -25,7 +25,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              AI Product Manager specializing in turning complex AI concepts into practical, user-friendly solutions
+              Principal Product Manager with 10 years of experience building products that serve 200,000+ customers across enterprise and SMB markets
             </p>
           </div>
 
@@ -41,14 +41,14 @@ const About = () => {
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium">Senior AI Product Manager</h4>
-                    <p className="text-sm text-muted-foreground">Tech Startup • 2022 - Present</p>
-                    <p className="text-sm mt-2">Leading AI product initiatives, built 8+ prototypes</p>
+                    <h4 className="font-medium">Principal Product Manager - Platforms</h4>
+                    <p className="text-sm text-muted-foreground">Spotzer Digital • 2022 - Present</p>
+                    <p className="text-sm mt-2">Leading cross-functional team of 15, serving 200K+ customers via T-Mobile, Vodafone, Telstra</p>
                   </div>
                   <div>
-                    <h4 className="font-medium">Product Manager</h4>
-                    <p className="text-sm text-muted-foreground">SaaS Company • 2020 - 2022</p>
-                    <p className="text-sm mt-2">Managed product roadmap, launched 3 major features</p>
+                    <h4 className="font-medium">Senior Product Manager</h4>
+                    <p className="text-sm text-muted-foreground">Acroud • 2017 - 2021</p>
+                    <p className="text-sm mt-2">Improved onboarding by 110%, driving $500K annual revenue increase</p>
                   </div>
                 </div>
               </CardContent>
@@ -65,14 +65,14 @@ const About = () => {
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium">MS in Computer Science</h4>
-                    <p className="text-sm text-muted-foreground">University Name • 2018 - 2020</p>
-                    <p className="text-sm mt-2">Focus: Machine Learning & AI</p>
+                    <h4 className="font-medium">BA in Psychobiology</h4>
+                    <p className="text-sm text-muted-foreground">University of Amsterdam • 2009 - 2012</p>
+                    <p className="text-sm mt-2">Foundation in behavioral science and research methods</p>
                   </div>
                   <div>
-                    <h4 className="font-medium">BS in Engineering</h4>
-                    <p className="text-sm text-muted-foreground">University Name • 2014 - 2018</p>
-                    <p className="text-sm mt-2">Graduated with Honors</p>
+                    <h4 className="font-medium">Languages</h4>
+                    <p className="text-sm text-muted-foreground">Multilingual</p>
+                    <p className="text-sm mt-2">English, Dutch, Mandarin, Spanish, German</p>
                   </div>
                 </div>
               </CardContent>
