@@ -24,14 +24,14 @@ const Hero = () => {
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
-            <p className="text-accent font-medium text-lg">AI Product Manager</p>
+            <p className="text-accent font-medium text-lg">Principal Product Manager</p>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
               Building AI Products
               <br />
               That Matter
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto">
-              Transforming ideas into intelligent prototypes. Helping companies leverage AI to solve real problems.
+              10 years of product experience. Now building AI solutions that improve everyday life and work.
             </p>
           </div>
 
@@ -56,16 +56,16 @@ const Hero = () => {
 
           <div className="pt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="space-y-2">
-              <p className="text-3xl font-bold text-accent">15+</p>
-              <p className="text-sm text-muted-foreground">AI Projects</p>
+              <p className="text-3xl font-bold text-accent">10+</p>
+              <p className="text-sm text-muted-foreground">Years Experience</p>
             </div>
             <div className="space-y-2">
-              <p className="text-3xl font-bold text-accent">5+</p>
-              <p className="text-sm text-muted-foreground">Companies</p>
+              <p className="text-3xl font-bold text-accent">200K+</p>
+              <p className="text-sm text-muted-foreground">Customers Served</p>
             </div>
             <div className="space-y-2">
-              <p className="text-3xl font-bold text-accent">3yrs</p>
-              <p className="text-sm text-muted-foreground">Experience</p>
+              <p className="text-3xl font-bold text-accent">$150M+</p>
+              <p className="text-sm text-muted-foreground">Revenue Driven</p>
             </div>
           </div>
         </div>
