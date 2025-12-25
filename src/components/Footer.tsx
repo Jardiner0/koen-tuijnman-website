@@ -20,7 +20,7 @@ const Footer = () => {
               Connect
             </p>
             <div className="flex md:justify-end gap-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
+              <a href="https://github.com/Jardiner0" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
