@@ -9,7 +9,7 @@ const Footer = () => {
               Get in Touch
             </h2>
             
-            <a href="mailto:hello@koentuijnman.com" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors">koentuijnman90@gmail.com<Mail className="h-4 w-4" />
+            <a className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors" href="mailto:koentuijnman90@gmail.com">koentuijnman90@gmail.com<Mail className="h-4 w-4" />
               hello@koentuijnman.com
             </a>
           </div>
