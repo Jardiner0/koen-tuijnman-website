@@ -1,6 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar } from "lucide-react";
-
 interface BlogCardProps {
   title: string;
   excerpt: string;
@@ -10,21 +7,22 @@ interface BlogCardProps {
 
 const BlogCard = ({ title, excerpt, date, readTime }: BlogCardProps) => {
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 border border-border bg-gradient-to-br from-card to-card/50 cursor-pointer">
-      <CardHeader>
-        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-          <Calendar className="h-4 w-4" />
-          <span>{date}</span>
-          <span>•</span>
-          <span>{readTime}</span>
-        </div>
-        <CardTitle className="text-xl group-hover:text-accent transition-colors">{title}</CardTitle>
-        <CardDescription>{excerpt}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <span className="text-accent font-medium group-hover:underline">Read more →</span>
-      </CardContent>
-    </Card>
+    <article className="group p-6 border border-border rounded-sm bg-card hover:bg-secondary/50 transition-colors cursor-pointer">
+      <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3 font-body">
+        <span>{date}</span>
+        <span>·</span>
+        <span>{readTime}</span>
+      </div>
+      <h3 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+        {title}
+      </h3>
+      <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
+        {excerpt}
+      </p>
+      <span className="text-sm text-accent font-medium">
+        Read more →
+      </span>
+    </article>
   );
 };
 

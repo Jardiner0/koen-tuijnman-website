@@ -1,64 +1,57 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string;
   tools: string[];
-  languages: string[];
   link?: string;
 }
 
-const ProjectCard = ({ title, description, image, tools, languages, link }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, tools, link }: ProjectCardProps) => {
   return (
-    <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 border border-border bg-gradient-to-br from-card to-card/50">
-      <div className="relative overflow-hidden aspect-video">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
+    <div className="group p-6 border border-border rounded-sm bg-card hover:bg-secondary/50 transition-colors">
+      <div className="flex items-start justify-between mb-4">
+        <h3 className="font-display text-lg font-bold text-foreground">
+          {title}
+        </h3>
         {link && (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-accent hover:text-accent-foreground"
-            aria-label={`Visit ${title}`}
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label={`View ${title}`}
           >
-            <ExternalLink className="h-4 w-4" />
+            <ArrowUpRight className="h-4 w-4" />
           </a>
         )}
       </div>
-      <CardHeader>
-        <CardTitle className="text-xl">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </CardHeader>
-      <CardContent className="space-y-4">
-        <div>
-          <p className="text-sm font-medium mb-2 text-muted-foreground">Technologies</p>
-          <div className="flex flex-wrap gap-2">
-            {tools.map((tool) => (
-              <Badge key={tool} variant="secondary">
-                {tool}
-              </Badge>
-            ))}
-          </div>
+      <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">
+        {description}
+      </p>
+      <div className="flex flex-wrap gap-2">
+        {tools.map((tool) => (
+          <span
+            key={tool}
+            className="text-xs text-muted-foreground font-body"
+          >
+            {tool}
+          </span>
+        ))}
+      </div>
+      {link && (
+        <div className="mt-4 pt-4 border-t border-border">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-accent hover:text-accent/80 font-medium transition-colors"
+          >
+            View Project →
+          </a>
         </div>
-        <div>
-          <p className="text-sm font-medium mb-2 text-muted-foreground">Languages</p>
-          <div className="flex flex-wrap gap-2">
-            {languages.map((lang) => (
-              <Badge key={lang} variant="outline">
-                {lang}
-              </Badge>
-            ))}
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+      )}
+    </div>
   );
 };
 
