@@ -1,8 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer id="contact" className="py-24 px-6 border-t border-border">
+  return <footer id="contact" className="py-24 px-6 border-t border-border">
       <div className="container mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left: Contact CTA */}
@@ -10,14 +8,8 @@ const Footer = () => {
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Get in Touch
             </h2>
-            <p className="text-muted-foreground font-body leading-relaxed mb-6">
-              Interested in working together on AI projects or need product expertise? I'd love to hear from you.
-            </p>
-            <a
-              href="mailto:hello@koentuijnman.com"
-              className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors"
-            >
-              <Mail className="h-4 w-4" />
+            
+            <a href="mailto:hello@koentuijnman.com" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors">koentuijnman90@gmail.com<Mail className="h-4 w-4" />
               hello@koentuijnman.com
             </a>
           </div>
@@ -28,29 +20,13 @@ const Footer = () => {
               Connect
             </p>
             <div className="flex md:justify-end gap-4">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="GitHub"
-              >
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
-                href="mailto:hello@koentuijnman.com"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Email"
-              >
+              <a href="mailto:hello@koentuijnman.com" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -65,8 +41,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Koen Tuijnman. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
