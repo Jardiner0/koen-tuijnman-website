@@ -1,5 +1,4 @@
 import BlogCard from "./BlogCard";
-import { Button } from "@/components/ui/button";
 
 const Blog = () => {
   const posts = [
@@ -24,25 +23,23 @@ const Blog = () => {
   ];
 
   return (
-    <section id="blog" className="py-24 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">Latest Insights</h2>
-          <p className="text-lg text-muted-foreground">
-            Thoughts on AI product development, prototyping, and lessons learned
+    <section id="blog" className="py-24 px-6">
+      <div className="container mx-auto max-w-5xl">
+        {/* Section Header */}
+        <div className="mb-16">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-2">
+            Writing
+          </h2>
+          <p className="text-muted-foreground font-body">
+            Thoughts on AI product development and lessons learned
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
+        {/* Blog Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map((post) => (
             <BlogCard key={post.title} {...post} />
           ))}
-        </div>
-
-        <div className="text-center">
-          <Button variant="outline" size="lg">
-            View All Posts
-          </Button>
         </div>
       </div>
     </section>
