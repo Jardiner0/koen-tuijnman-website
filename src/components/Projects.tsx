@@ -6,19 +6,22 @@ const Projects = () => {
       title: "Menu Digitalizer",
       description: "AI-powered tool that transforms physical restaurant and food truck menus into beautiful digital formats, making menu management effortless.",
       tools: ["OpenAI Vision", "React", "Supabase", "TypeScript"],
-      link: "#",
+      link: "/projects/menu-digitalizer",
+      isExternal: false,
     },
     {
       title: "Journal Summarizer",
       description: "Converts handwritten notes from Supernote into structured summaries, actionable tasks, and insights using AI-powered handwriting recognition.",
       tools: ["Claude API", "OCR", "LangChain", "Python"],
-      link: "#",
+      link: "/projects/journal-summarizer",
+      isExternal: false,
     },
     {
       title: "AI Content Solutions",
       description: "Scalable AI content generation system for digital marketing products, accelerating product delivery by 50% for enterprise clients.",
       tools: ["OpenAI API", "AWS", "PostgreSQL", "Python"],
-      link: "#",
+      link: "/projects/ai-content-solutions",
+      isExternal: false,
     },
   ];
 
