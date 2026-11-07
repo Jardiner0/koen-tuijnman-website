@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row">
+    <section id="about" className="min-h-screen flex flex-col lg:flex-row">
       {/* Left Side - Image (takes up most of the left side) */}
       <div className="w-full lg:w-[60%] h-[50vh] lg:h-screen">
         <img
@@ -28,7 +28,7 @@ const Hero = () => {
             I'm a Principal Product Manager with a decade of experience turning complex problems into elegant solutions. Currently, I lead a cross-functional team of 15 at Spotzer Digital, building platforms that power digital presence for 200K+ small businesses through partners like T-Mobile, Vodafone, and Telstra.
           </p>
           <p className="text-sm sm:text-base text-muted-foreground font-body leading-relaxed">
-            My background in Psychobiology from the University of Amsterdam gives me a unique lens on user behavior. I combine this with strong technical acumen—Python, SQL, and cloud infrastructure—to build products that not only work but resonate.
+            My background in Psychobiology from the University of Amsterdam gives me a unique lens on user behavior. I combine this with hands-on technical skills in Python, SQL and cloud infrastructure to build products that not only work but resonate.
           </p>
           <p className="text-sm sm:text-base text-muted-foreground font-body leading-relaxed">
             Now I'm channeling my expertise into personal AI projects: tools that digitize restaurant menus, summarize handwritten journals, and automate the mundane so we can focus on what matters.

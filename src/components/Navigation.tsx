@@ -38,7 +38,7 @@ const Navigation = () => {
               onClick={() => scrollToSection("blog")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-200 hover:after:w-full pb-1"
             >
-              Blog
+              Writing
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -81,7 +81,7 @@ const Navigation = () => {
               onClick={() => scrollToSection("blog")}
               className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 py-3 hover:bg-secondary/50 px-3 rounded-sm min-h-[44px]"
             >
-              Blog
+              Writing
             </button>
             <button
               onClick={() => scrollToSection("contact")}

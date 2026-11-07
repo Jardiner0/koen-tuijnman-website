@@ -1,4 +1,5 @@
-import { Download } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { LINKEDIN_URL } from "@/data/links";
 
 const Skills = () => {
   const skills = {
@@ -39,15 +40,16 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* CV Download Button */}
+        {/* Full experience on LinkedIn */}
         <div className="flex justify-center mt-16">
           <a
-            href="/cv.pdf"
-            download
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-sm font-medium transition-all duration-200 hover:bg-primary/90 hover:shadow-lg min-h-[44px]"
           >
-            <Download className="h-4 w-4" />
-            Download CV
+            <Linkedin className="h-4 w-4" />
+            Full experience on LinkedIn
           </a>
         </div>
       </div>

@@ -23,10 +23,36 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Koen Tuijnman | Principal Product Manager" />
     <meta name="twitter:description" content="Principal Product Manager with 10 years experience building AI solutions and digital products." />
+
+    <!-- Structured data: tells search and answer engines who this site is about -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Koen Tuijnman",
+      "jobTitle": "Principal Product Manager",
+      "worksFor": { "@type": "Organization", "name": "Spotzer Digital" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Amsterdam" },
+      "description": "Principal Product Manager building AI products and digital marketing platforms for small businesses, with a focus on answer engine optimization (AEO) and generative engine optimization (GEO).",
+      "knowsAbout": ["Product management", "AI products", "Answer engine optimization", "Generative engine optimization", "Digital marketing for SMBs"],
+      "sameAs": [
+        "https://www.linkedin.com/in/koen-tuijnman/",
+        "https://substack.com/@koentuijnman",
+        "https://github.com/Jardiner0"
+      ]
+    }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
+    <!-- Readable fallback for crawlers and readers without JavaScript -->
+    <noscript>
+      <h1>Koen Tuijnman, Principal Product Manager</h1>
+      <p>Principal Product Manager at Spotzer Digital, building AI products and digital marketing platforms for small businesses delivered through enterprise partners. Focus areas: answer engine optimization (AEO), generative engine optimization (GEO) and applied AI.</p>
+      <p>Projects: Menu Digitalizer, Journal Summarizer, AI Content Solutions.</p>
+      <p>Writing: <a href="https://substack.com/@koentuijnman">Substack</a>. Connect: <a href="https://www.linkedin.com/in/koen-tuijnman/">LinkedIn</a>, <a href="https://github.com/Jardiner0">GitHub</a>.</p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

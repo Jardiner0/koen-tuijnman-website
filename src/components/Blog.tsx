@@ -1,46 +1,58 @@
+import { ArrowUpRight } from "lucide-react";
 import BlogCard from "./BlogCard";
+import { posts } from "@/data/posts";
+import { SUBSTACK_URL } from "@/data/links";
 
 const Blog = () => {
-  const posts = [
-    {
-      title: "Building AI Products: Lessons from 15+ Projects",
-      excerpt: "Key insights and frameworks I've developed while building AI prototypes for various industries.",
-      date: "Mar 15, 2024",
-      readTime: "5 min read",
-    },
-    {
-      title: "From Idea to MVP: The AI Product Playbook",
-      excerpt: "A practical guide to rapidly prototyping AI solutions and validating them with real users.",
-      date: "Feb 28, 2024",
-      readTime: "7 min read",
-    },
-    {
-      title: "Why Most AI Projects Fail (And How to Avoid It)",
-      excerpt: "Common pitfalls in AI product development and strategies to build solutions that actually work.",
-      date: "Feb 10, 2024",
-      readTime: "6 min read",
-    },
-  ];
-
   return (
     <section id="blog" className="py-24 px-6">
       <div className="container mx-auto max-w-5xl">
         {/* Section Header */}
-        <div className="mb-16">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-2">
-            Writing
-          </h2>
-          <p className="text-muted-foreground font-body">
-            Thoughts on AI product development and lessons learned
-          </p>
+        <div className="mb-16 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-2">
+              Writing
+            </h2>
+            <p className="text-muted-foreground font-body">
+              Notes on AI products, answer engines and building things that work
+            </p>
+          </div>
+          <a
+            href={SUBSTACK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-accent font-medium inline-flex items-center gap-1 hover:gap-2 transition-all duration-200"
+          >
+            Subscribe on Substack
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
         </div>
 
-        {/* Blog Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map((post) => (
-            <BlogCard key={post.title} {...post} />
-          ))}
-        </div>
+        {posts.length > 0 ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {posts.map((post) => (
+              <BlogCard key={post.url} {...post} />
+            ))}
+          </div>
+        ) : (
+          <div className="p-8 border border-border rounded-sm bg-card">
+            <p className="font-display text-lg font-bold text-foreground mb-2">
+              First essay coming soon
+            </p>
+            <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
+              Follow along on Substack to get new posts in your inbox.
+            </p>
+            <a
+              href={SUBSTACK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-accent font-medium inline-flex items-center gap-1 hover:gap-2 transition-all duration-200"
+            >
+              Go to Substack
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
