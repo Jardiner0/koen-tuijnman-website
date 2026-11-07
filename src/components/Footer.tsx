@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Newspaper } from "lucide-react";
+import { EMAIL, GITHUB_URL, LINKEDIN_URL, SUBSTACK_URL } from "@/data/links";
 const Footer = () => {
   return <footer id="contact" className="py-24 px-6 border-t border-border">
       <div className="container mx-auto max-w-5xl">
@@ -9,9 +10,9 @@ const Footer = () => {
               Get in Touch
             </h2>
 
-            <a className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-all duration-200 hover:gap-3 group" href="mailto:koentuijnman90@gmail.com">
+            <a className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-all duration-200 hover:gap-3 group" href={`mailto:${EMAIL}`}>
               <Mail className="h-4 w-4 group-hover:scale-110 transition-transform duration-200" />
-              koentuijnman90@gmail.com
+              {EMAIL}
             </a>
           </div>
 
@@ -21,13 +22,16 @@ const Footer = () => {
               Connect
             </p>
             <div className="flex md:justify-end gap-4">
-              <a href="https://github.com/Jardiner0" target="_blank" rel="noopener noreferrer" className="p-3 text-muted-foreground hover:text-foreground transition-all duration-200 hover:bg-secondary/50 rounded-sm hover:scale-110 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="GitHub">
+              <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="p-3 text-muted-foreground hover:text-foreground transition-all duration-200 hover:bg-secondary/50 rounded-sm hover:scale-110 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="GitHub">
                 <Github className="h-6 w-6" />
               </a>
-              <a href="https://www.linkedin.com/in/koen-tuijnman/" target="_blank" rel="noopener noreferrer" className="p-3 text-muted-foreground hover:text-foreground transition-all duration-200 hover:bg-secondary/50 rounded-sm hover:scale-110 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="LinkedIn">
+              <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="p-3 text-muted-foreground hover:text-foreground transition-all duration-200 hover:bg-secondary/50 rounded-sm hover:scale-110 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="mailto:koentuijnman90@gmail.com" className="p-3 text-muted-foreground hover:text-foreground transition-all duration-200 hover:bg-secondary/50 rounded-sm hover:scale-110 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Email">
+              <a href={SUBSTACK_URL} target="_blank" rel="noopener noreferrer" className="p-3 text-muted-foreground hover:text-foreground transition-all duration-200 hover:bg-secondary/50 rounded-sm hover:scale-110 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Substack">
+                <Newspaper className="h-6 w-6" />
+              </a>
+              <a href={`mailto:${EMAIL}`} className="p-3 text-muted-foreground hover:text-foreground transition-all duration-200 hover:bg-secondary/50 rounded-sm hover:scale-110 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Email">
                 <Mail className="h-6 w-6" />
               </a>
             </div>
